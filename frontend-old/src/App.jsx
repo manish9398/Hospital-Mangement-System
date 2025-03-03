@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-// import { fetchHospitals, deleteHospital } from "./api"; // Import API functions
-import "./styles/App.css";
-import { deleteHospital, fetchHospitals } from "./api/api";
+import { fetchHospitals, deleteHospital } from "./api"; // Import API functions
+import "./App.css";
 
 function App() {
   const [hospitals, setHospitals] = useState([]);
@@ -23,7 +22,6 @@ function App() {
       setHospitals(data);
     } catch (err) {
       setError("Failed to fetch hospitals. Please try again.");
-      console.log(err);
     } finally {
       setLoading(false);
     }

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { API } from "./api";
 
 
-
 export default function Home() {
   const [hospitals, setHospitals] = useState([]);
   const [city, setCity] = useState("");
